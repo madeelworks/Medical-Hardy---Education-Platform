@@ -13,9 +13,9 @@ Courses Section displaying various popular courses with responsive cards.
 Additional Sections for quality education, affordable packages, and testimonials.
 Newsletter Subscription Form with an email input and subscribe button.
 Footer with company info, legal links, features, resources, and contact details.
+
+
 Technologies Used
 HTML5 - For structuring the content.
 Tailwind CSS - For styling and layout.
 JavaScript - For interactivity, including the hamburger menu functionality.
-
-JavaScript - Handles the mobile menu functionality.
