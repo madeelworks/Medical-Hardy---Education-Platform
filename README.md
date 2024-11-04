@@ -16,6 +16,12 @@ Footer with company info, legal links, features, resources, and contact details.
 
 
 Technologies Used
+
+
 HTML5 - For structuring the content.
+
+
 Tailwind CSS - For styling and layout.
+
+
 JavaScript - For interactivity, including the hamburger menu functionality.
