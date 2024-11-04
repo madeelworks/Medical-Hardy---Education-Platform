@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+  <title>Medical Hardy</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<body class="bg-green">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-6 lg:px-20 max-w-screen-2xl mx-auto">
+    <div class="text-1xl font-bold text-gray-800">Medical Hardy</div>
+
+    <!-- Mobile menu button (hamburger) -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-gray-600 focus:outline-none">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+    </div>
+
+    <!-- Menu links (hidden on small screens) -->
+    <div id="menu" class="hidden md:flex space-x-6 text-gray-600" style="width: 40%; padding-left: 60px;">
+      <a href="#" class="hover:text-green-600">Home</a>
+      <a href="#" class="hover:text-green-600">Product</a>
+      <a href="#" class="hover:text-green-600">Pricing</a>
+      <a href="#" class="hover:text-green-600">Contact</a>
+    </div>
+
+    <div class="space-x-4 hidden md:flex">
+      <a href="#" class="text-gray-600 hover:text-green-600">Login</a>
+      <!-- <a href="#" class="bg-green-500 text-white px-4 py-2 rounded">JOIN US</a> -->
+    </div>
+  </nav>
+
+  <!-- Mobile dropdown menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white transition-all duration-300 ease-in-out">
+    <a href="#" class="block text-gray-600 px-4 py-2 hover:text-green-600">Home</a>
+    <a href="#" class="block text-gray-600 px-4 py-2 hover:text-green-600">Product</a>
+    <a href="#" class="block text-gray-600 px-4 py-2 hover:text-green-600">Pricing</a>
+    <a href="#" class="block text-gray-600 px-4 py-2 hover:text-green-600">Contact</a>
+    <a href="#" class="block text-gray-600 px-4 py-2 hover:text-green-600">Login</a>
+    <!-- <a href="#" class="block bg-green-500 text-white text-center px-4 py-2 rounded mt-2 mx-4">JOIN US</a> -->
+  </div>
+
+  <!-- Main Section -->
+  <div class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-10 lg:py-20 max-w-screen-2xl mx-auto">
+    <!-- Left Section (Text) -->
+    <div class="w-full lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
+      <p class="text-green-600 text-lg mb-2">Online</p>
+      <h1 class="text-4xl lg:text-5xl font-bold">HIGH QUALITY COURSES</h1>
+      <p class="mt-2 text-gray-600">Every day brings with it a fresh set of learning possibilities.</p>
+      <div class="mt-4 space-x-4">
+        <button class="bg-green-500 text-white px-4 py-2 rounded">Get Quote Now</button>
+        <button class="border border-green-500 text-green-500 px-2 py-2 rounded">Learn More</button>
+      </div>
+    </div>
+    <!-- Right Section (Image) -->
+    <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+      <img src="img/col-md-6 (1).png" alt="Student Image" class="w-60 md:w-80 lg:w-96 h-auto rounded-lg shadow-lg">
+    </div>
+  </div>
+
+ 
+
+  <!-- Popular Courses Section -->
+  <div class="w-full px-6 lg:px-20 py-10 lg:py-20 max-w-screen-2xl mx-auto text-center lg:text-left">
+    <p class="text-green-600 text-lg mb-2">Practice Advice</p>
+    <h1 class="text-3xl lg:text-4xl font-bold">Our Popular COURSES</h1>
+    <p class="mt-2 text-gray-600">Problem trying to resolve the conflict between <br> the two major realms of classical physics: Newtonian Mechanics</p>
+  </div>
+
+  <!-- Courses Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 lg:px-20 pb-10 lg:pb-20 max-w-screen-2xl mx-auto">
+    <!-- Card 1 -->
+    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+      <img src="img/004-desktop-screen.png" alt="Icon 1" class="w-16 h-16 mx-auto mb-4">
+      <h3 class="text-lg font-semibold text-gray-800">Training Courses</h3>
+      <div class="h-1 w-10 bg-red-500 mx-auto my-2"></div>
+      <p class="text-gray-500">The gradual accumulation of information about</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+      <img src="img/005-telescope.png" alt="Icon 2" class="w-16 h-16 mx-auto mb-4">
+      <h3 class="text-lg font-semibold text-gray-800">Training Courses</h3>
+      <div class="h-1 w-10 bg-red-500 mx-auto my-2"></div>
+      <p class="text-gray-500">The gradual accumulation of information about</p>
+    </div>
+
+    <!-- Card 3 (Highlighted) -->
+    <div class="bg-green-200 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+      <img src="img/006-flask.png" alt="Icon 3" class="w-16 h-16 mx-auto mb-4">
+      <h3 class="text-lg font-semibold text-gray-800">Training Courses</h3>
+      <div class="h-1 w-10 bg-white mx-auto my-2"></div>
+      <p class="text-gray-700">The gradual information about atomic behaviour...</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+      <img src="img/007-owl.png" alt="Icon 4" class="w-16 h-16 mx-auto mb-4">
+      <h3 class="text-lg font-semibold text-gray-800">Expert Instruction</h3>
+      <div class="h-1 w-10 bg-red-500 mx-auto my-2"></div>
+      <p class="text-gray-500">The gradual accumulation of information about</p>
+    </div>
+  </div>
+
+  <!-- Quality Education Section -->
+  <div class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-10 lg:py-20 max-w-screen-2xl mx-auto">
+    <!-- Right Section (Image) -->
+    <div class="w-full lg:w-1/2 flex justify-center lg:justify-start mb-10 lg:mb-0">
+      <img src="img/col-md-6.png" alt="Student Image" class="w-60 md:w-80 lg:w-96 h-auto rounded-lg shadow-lg">
+    </div>
+
+    <!-- Left Section (Text) -->
+    <div class="w-full lg:w-1/2 text-center lg:text-left">
+      <div class="h-1 w-20 bg-red-500 mx-auto lg:mx-0 my-6"></div>
+      <h1 class="text-3xl lg:text-4xl font-bold">Get Quality Education</h1>
+      <p class="mt-2 text-gray-600">Problem trying to resolve the conflict between the two major realms of classical physics: Newtonian Mechanics</p>
+      <div class="mt-4">
+        <button class="text-green-500">Learn More &gt;</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-10 lg:py-20 max-w-screen-2xl mx-auto">
+    <!-- Left Section (Text) -->
+    <div class="w-full lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
+      <div class="h-1 w-20 bg-red-500 mx-auto lg:mx-0 my-6"></div>
+      <h1 class="text-4xl lg:text-5xl font-bold">Approdable Packages</h1>
+      <p class="mt-8 text-gray-600">Problems trying to resolve the conflict between <br>the two major realms of classical physics: <br>Newtonian Mechanics</p>
+      <div class="mt-4">
+        <button class="text-green-500">Learn More &gt;</button>
+      </div>
+    </div>
+  <!-- Right Section (Image) -->
+    <div class="w-full lg:w-1/2 flex justify-center lg:justify-start">
+      <img src="img/media bg-cover sec-.png" alt="Student Image" class="w-60 md:w-80 lg:w-96 h-auto rounded-lg shadow-lg">
+    </div>
+  </div>
+    
+
+  <div  class="w-full px-6 lg:px-20 py-10 lg:py-20 max-w-screen-2xl mx-auto text-center lg:text-left">
+    <p class="text-green-600 text-lg mb-4">Courses</p>
+    <h1 class=" lg:text-5xl font-bold">Most Popular Courses</h1>
+    <p class="mt-6">Problem trying to resolve the conflict between <br>the two major realms of classical physics: <br> Newtonian Mechanics</p>
+  </div>
+  <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-20 py-10">
+
+    <!-- Card 1 -->
+    <div class=" rounded-lg shadow-lg overflow-hidden ">
+      <!-- Image Section -->
+      <div class="relative">
+        <img src="img/product-cover-133 sec-.png" alt="Course Image 1" class="w-full h-56 object-cover">
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-sm px-2 py-1 rounded">Sale</span>
+        <div class="absolute bottom-2 left-2 flex space-x-2 text-white">
+          <button class="bg-gray-800 p-2 rounded-full"><i class="fas fa-heart"></i></button>
+          <button class="bg-gray-800 p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+          <button class="bg-gray-800 p-2 rounded-full"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+      <!-- Content Section -->
+      <div class="p-4 text-center">
+        <p class="text-green-600 text-sm">training Courses <span class="text-yellow-500">★ 4.9</span></p>
+        <h3 class="text-lg font-bold mt-2">Video in Live Action</h3>
+        <p class="text-gray-600 text-sm mt-2">We focus on ergonomics and meeting you...</p>
+        <p class="text-gray-500 text-sm mt-2"><i class="fas fa-download"></i> 15 Sales</p>
+        <p class="text-gray-600 text-sm mt-1"><del>$16.48</del> <span class="text-red-500 font-bold">$6.48</span></p>
+        <button class="mt-4 text-green-500 border border-green-500 px-4 py-2 rounded-full">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Repeat the card structure for Card 2, Card 3, and Card 4 -->
+
+    <!-- Card 2 -->
+    <div class=" rounded-lg shadow-lg overflow-hidden">
+      <div class="relative">
+        <img src="img/product-cover-131.png" alt="Course Image 2" class="w-full h-56 object-cover">
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-sm px-2 py-1 rounded">Sale</span>
+        <div class="absolute bottom-2 left-2 flex space-x-2 text-white">
+          <button class="bg-gray-800 p-2 rounded-full"><i class="fas fa-heart"></i></button>
+          <button class="bg-gray-800 p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+          <button class="bg-gray-800 p-2 rounded-full"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+      <div class="p-4 text-center">
+        <p class="text-green-600 text-sm">training Courses <span class="text-yellow-500">★ 4.9</span></p>
+        <h3 class="text-lg font-bold mt-2">Most Popular Courses</h3>
+        <p class="text-gray-600 text-sm mt-2">We focus on ergonomics and meeting you...</p>
+        <p class="text-gray-500 text-sm mt-2"><i class="fas fa-download"></i> 15 Sales</p>
+        <p class="text-gray-600 text-sm mt-1"><del>$16.48</del> <span class="text-red-500 font-bold">$6.48</span></p>
+        <button class="mt-4 text-green-500 border border-green-500 px-4 py-2 rounded-full">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class=" rounded-lg shadow-lg overflow-hidden">
+      <div class="relative">
+        <img src="img/product-cover-130 sec-.png" alt="Course Image 3" class="w-full h-56 object-cover">
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-sm px-2 py-1 rounded">Sale</span>
+        <div class="absolute bottom-2 left-2 flex space-x-2 text-white">
+          <button class="bg-gray-800 p-2 rounded-full"><i class="fas fa-heart"></i></button>
+          <button class="bg-gray-800 p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+          <button class="bg-gray-800 p-2 rounded-full"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+      <div class="p-4 text-center">
+        <p class="text-green-600 text-sm">2,769 online courses <span class="text-yellow-500">★ 4.9</span></p>
+        <h3 class="text-lg font-bold mt-2">Our Experts Teacher</h3>
+        <p class="text-gray-600 text-sm mt-2">We focus on ergonomics and meeting you...</p>
+        <p class="text-gray-500 text-sm mt-2"><i class="fas fa-download"></i> 15 Sales</p>
+        <p class="text-gray-600 text-sm mt-1"><del>$16.48</del> <span class="text-red-500 font-bold">$6.48</span></p>
+        <button class="mt-4 text-green-500 border border-green-500 px-4 py-2 rounded-full">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class=" rounded-lg shadow-lg overflow-hidden">
+      <div class="relative">
+        <img src="img/product-cover-131.png" alt="Course Image 4" class="w-full h-56 object-cover">
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-sm px-2 py-1 rounded">Sale</span>
+        <div class="absolute bottom-2 left-2 flex space-x-2 text-white">
+          <button class="bg-gray-800 p-2 rounded-full"><i class="fas fa-heart"></i></button>
+          <button class="bg-gray-800 p-2 rounded-full"><i class="fas fa-shopping-cart"></i></button>
+          <button class="bg-gray-800 p-2 rounded-full"><i class="fas fa-eye"></i></button>
+        </div>
+      </div>
+      <div class="p-4 text-center">
+        <p class="text-green-600 text-sm">training Courses <span class="text-yellow-500">★ 4.9</span></p>
+        <h3 class="text-lg font-bold mt-2">Every Client Matters</h3>
+        <p class="text-gray-600 text-sm mt-2">We focus on ergonomics and meeting you...</p>
+        <p class="text-gray-500 text-sm mt-2"><i class="fas fa-download"></i> 15 Sales</p>
+        <p class="text-gray-600 text-sm mt-1"><del>$16.48</del> <span class="text-red-500 font-bold">$6.48</span></p>
+        <button class="mt-4 text-green-500 border border-green-500 px-4 py-2 rounded-full">Learn More</button>
+      </div>
+    </div>
+
+  </div>
+  <div  class="w-full px-6 lg:px-20 py-10 lg:py-20 max-w-screen-2xl mx-auto text-center lg:text-left">
+    <p class="text-green-600 text-lg mb-4">Practice advice</p>
+    <h1 class=" lg:text-5xl font-bold">Our Experts Teacher</h1>
+    <p class="mt-6">Problem trying to resolve the conflict between <br>the two major realms of classical physics: <br> Newtonian Mechanics</p>
+  </div>
+
+  <div class="container mx-auto flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-6 px-4">
+
+    <!-- First Card -->
+    <div class="bg-white rounded-lg shadow-lg p-8 w-80">
+      <div class="flex flex-col items-center">
+        <div class=" mb-4">
+<img src="img/circle sec-.png" alt="">        </div>
+        <h2 class="text-xl font-semibold text-gray-800">FREE</h2>
+        <p class="text-gray-600 mt-2">Organize across all apps by hand</p>
+        <p class="text-green-600 text-3xl font-bold mt-4">19$</p>
+        <p class="text-gray-500">Per Month</p>
+        <p class="text-gray-500 mt-4 text-center">Slate helps you see how many more days you need...</p>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4">Try for free</button>
+        <div class="mt-6 space-y-2">
+          <p class="text-gray-800 flex items-center"><i class="fas fa-check mark bg-green-500 rounded-full text-white"></i> Unlimited product updates</p>
+          <p class="text-gray-800 flex items-center"><i class="fas fa-check mark bg-green-500 rounded-full text-white"></i> Unlimited product updates</p>
+          <p class="text-gray-800 flex items-center"><i class="fas fa-check mark bg-green-500 rounded-full text-white"></i> Unlimited product updates</p>
+          <p class="text-gray-800 flex items-center"><i class="fas fa-check mark bg-gray-500 rounded-full text-white"></i>1GB Cloud storage</p>
+          <p class="text-gray-800 flex items-center"><i class="fas fa-check mark bg-gray-500 rounded-full text-white"></i> Email and community support</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle Card with "New" Badge -->
+    <div class="bg-gray-600 text-white rounded-lg shadow-lg p-8 w-80 relative">
+      <div class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-semibold px-2 py-1 rounded-full">New</div>
+      <div class="flex flex-col items-center">
+        <div class=" mb-4">
+<img src="img/circle sec-.png" alt="">        </div>
+        <h2 class="text-xl font-semibold">FREE</h2>
+        <p class="mt-2">Organize across all apps by hand</p>
+        <p class="text-green-400 text-3xl font-bold mt-4">19$</p>
+        <p>Per Month</p>
+        <p class="mt-4 text-center">Slate helps you see how many more days you need...</p>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4">Try for free</button>
+        <div class="mt-6 space-y-2">
+          <p class="flex items-center"><i class="fas fa-check mark bg-green-500 rounded-full text-white"></i> Unlimited product updates</p>
+          <p class="flex items-center"><i class="fas fa-check mark bg-green-500 rounded-full text-white"></i> Unlimited product updates</p>
+          <p class="flex items-center"><i class="fas fa-check mark bg-green-500 rounded-full text-white"></i>Unlimited product updates</p>
+          <p class=" flex items-center"><i class="fas fa-check mark bg-gray-500 rounded-full text-white"></i>1GB Cloud storage</p>
+          <p class=" flex items-center"><i class="fas fa-check mark bg-gray-500 rounded-full text-white"></i>Email and community support</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Card -->
+    <div class="bg-white rounded-lg shadow-lg p-8 w-80">
+      <div class="flex flex-col items-center">
+        <div class=" mb-4">
+<img src="img/circle sec-.png" alt="">        </div>
+        <h2 class="text-xl font-semibold text-gray-800">FREE</h2>
+        <p class="text-gray-600 mt-2">Organize across all apps by hand</p>
+        <p class="text-green-600 text-3xl font-bold mt-4">19$</p>
+        <p class="text-gray-500">Per Month</p>
+        <p class="text-gray-500 mt-4 text-center">Slate helps you see how many more days you need...</p>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4">Try for free</button>
+        <div class="mt-6 space-y-2">
+          <p class="text-gray-800 flex items-center"><i class="fas fa-check mark bg-green-500 rounded-full text-white"></i> Unlimited product updates</p>
+          <p class="text-gray-800 flex items-center"><i class="fas fa-check mark bg-green-500 rounded-full text-white"></i> Unlimited product updates</p>
+          <p class="text-gray-800 flex items-center"><i class="fas fa-check mark bg-green-500 rounded-full text-white"></i> Unlimited product updates</p>
+          <p class="text-gray-800 flex items-center"><i class="fas fa-check mark bg-gray-500 rounded-full text-white"></i> 1GB Cloud storage</p>
+          <p class="text-gray-800 flex items-center"><i class="fas fa-check mark bg-gray-500 rounded-full text-white"></i> Email and community support</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div  class="w-full px-6 lg:px-20 py-10 lg:py-20 max-w-screen-2xl mx-auto text-center lg:text-left">
+    <p class="text-green-600 text-lg mb-4">Testimonials</p>
+    <h1 class=" lg:text-5xl font-bold">Video in Live Action</h1>
+    <p class="mt-6">Problem trying to resolve the conflict between <br>the two major realms of classical physics: Newtonian Mechanics</p>
+ 
+ 
+ 
+  </div> <!-- Main Section -->
+  <div class="flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 py-10 lg:py-20 max-w-screen-2xl mx-auto space-y-10 lg:space-y-0 lg:space-x-20">
+    
+    <!-- First Testimonial Card -->
+    <div class="flex flex-col items-center text-center space-y-4">
+      <img src="img/circle secpic-.png" alt="Regina Miles" class="">
+      <p class="text-gray-600">Slate helps you see how many more days<br> you need to work to reach your financial<br> goals for the month and year</p>
+      <div class="flex space-x-1 text-yellow-500">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <h3 class="text-2xl font-bold">Regina Miles</h3>
+      <p class="text-gray-400 font-bold">Designer</p>
+    </div>
+
+    <!-- Second Testimonial Card -->
+    <div class="flex flex-col items-center text-center space-y-4">
+      <img src="img/testimonial-user-cover-2.png" alt="Regina Miles" class="w-32 h-32 rounded-full">
+      <p class="text-gray-600">Slate helps you see how many more days<br> you need to work to reach your financial<br> goals for the month and year</p>
+      <div class="flex space-x-1 text-yellow-500">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <h3 class="text-2xl font-bold">Regina Miles</h3>
+      <p class="text-gray-400 font-bold">Designer</p>
+    </div>
+  </div>
+
+  <div class=" bg-pink-50">
+    <!-- Newsletter Section -->
+  <div class="text-center py-16">
+    <p class="text-green-600 text-lg mb-2">Newsletter</p>
+    <h2 class="text-3xl font-bold">Our Experts Teacher</h2>
+    <p class="mt-2 text-gray-600">
+      Problems trying to resolve the conflict between <br>
+      the two major realms of Classical physics: Newtonian mechanics
+    </p>
+    
+    <!-- Subscription Form -->
+    <div class="mt-8 max-w-lg mx-auto flex">
+      <input type="email" placeholder="Your Email" class="w-full p-4 border border-gray-300 rounded-l-lg focus:outline-none">
+      <button class="bg-green-500 text-white px-6 py-4 rounded-r-lg">Subscribe</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-white text-gray-700 py-10">
+    <div class="container mx-auto px-6 lg:px-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      <!-- Company Info -->
+      <div>
+        <h3 class="font-semibold mb-4">Company Info</h3>
+        <ul>
+          <li><a href="#" class="hover:text-green-500">About Us</a></li>
+          <li><a href="#" class="hover:text-green-500">Carrier</a></li>
+          <li><a href="#" class="hover:text-green-500">We are hiring</a></li>
+          <li><a href="#" class="hover:text-green-500">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h3 class="font-semibold mb-4">Legal</h3>
+        <ul>
+          <li><a href="#" class="hover:text-green-500">About Us</a></li>
+          <li><a href="#" class="hover:text-green-500">Carrier</a></li>
+          <li><a href="#" class="hover:text-green-500">We are hiring</a></li>
+          <li><a href="#" class="hover:text-green-500">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Features -->
+      <div>
+        <h3 class="font-semibold mb-4">Features</h3>
+        <ul>
+          <li><a href="#" class="hover:text-green-500">Business Marketing</a></li>
+          <li><a href="#" class="hover:text-green-500">User Analytic</a></li>
+          <li><a href="#" class="hover:text-green-500">Live Chat</a></li>
+          <li><a href="#" class="hover:text-green-500">Unlimited Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <h3 class="font-semibold mb-4">Resources</h3>
+        <ul>
+          <li><a href="#" class="hover:text-green-500">IOS & Android</a></li>
+          <li><a href="#" class="hover:text-green-500">Watch a Demo</a></li>
+          <li><a href="#" class="hover:text-green-500">Customers</a></li>
+          <li><a href="#" class="hover:text-green-500">API</a></li>
+        </ul>
+      </div>
+
+      <!-- Get In Touch -->
+      <div class="w-full lg:w-auto">
+        <h3 class="font-semibold mb-4">Get In Touch</h3>
+        <ul class="space-y-4">
+          <li>
+            <a href="#" class="hover:text-green-500 flex items-center space-x-2">
+              <img src="img/bx_bx-phone.png" alt="Phone Icon" class="w-5 h-5">
+              <span>(480) 555-0103</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-green-500 flex items-center space-x-2">
+              <img src="img/bx_bx-map.png" alt="Map Icon" class="w-5 h-5">
+              <span>4517 Washington Ave, Manchester, Kentucky 39495</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-green-500 flex items-center space-x-2">
+              <img src="img/carbon_send-alt.png" alt="Email Icon" class="w-5 h-5">
+              <span>debra.holt@example.com</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="border-t border-gray-200 mt-8 pt-4 text-center text-gray-500">
+      <p>Made With Love By Figmaland All Rights Reserved</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="hover:text-green-500"><img src="img/facebook.png" alt=""></a>
+        <a href="#" class="hover:text-green-500"><img src="img/instagram.png" alt=""></a>
+        <a href="#" class="hover:text-green-500"><img src="img/ant-design_twitter-outlined.png" alt=""></a>
+      </div>
+    </div>
+  </footer>
+  </div>
+   <!-- Other sections... -->
+
+   <script>
+    // JavaScript for toggling mobile menu visibility
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');  // Show/hide menu on button click
+    });
+
+    // Close menu when a link is clicked
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+
+  <!-- Font Awesome for the hamburger icon -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
