@@ -1,6 +1,9 @@
 
 **Medical Hardy - Professional Education Website
 **
+
+
+
 This is a responsive website template designed for educational services, focusing on online courses and training. The project was developed using HTML, Tailwind CSS, and JavaScript, with mobile responsiveness enabled through a hamburger menu for small screens.
 
 Features
